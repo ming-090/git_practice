@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的自我介紹網站</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    /* 導覽列 */
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* 區塊統一樣式 */
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      margin-top: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    /* 關於我 */
+    #about img {
+      width: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 20px auto;
+    }
+
+    /* 技能區 */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .skill {
+      background-color: #eee;
+      margin: 10px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    /* 聯絡我 */
+    #contact a {
+      display: inline-block;
+      margin: 10px;
+      text-decoration: none;
+      color: #333;
+      border: 1px solid #333;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    #contact a:hover {
+      background-color: #333;
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 導覽列 -->
+  <header>
+    <h1>王小明</h1>
+    <nav>
+      <a href="#about">關於我</a>
+      <a href="#skills">技能</a>
+      <a href="#projects">作品集</a>
+      <a href="#contact">聯絡我</a>
+    </nav>
+  </header>
+
+  <!-- 關於我 -->
+  <section id="about">
+    <h2>關於我</h2>
+    <img src="https://via.placeholder.com/150" alt="我的照片">
+    <p>嗨，我是王小明，一位熱愛設計與前端開發的網站工程師。目前專注於 HTML、CSS、JavaScript 與 React 框架的開發。我喜歡把設計轉化為能讓人愉悅使用的網頁體驗。</p>
+  </section>
+
+  <!-- 技能 -->
+  <section id="skills">
+    <h2>我的技能</h2>
+    <div class="skills-list">
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Node.js</div>
+    </div>
+  </section>
+
+  <!-- 作品集 -->
+  <section id="projects">
+    <h2>作品集</h2>
+    <p>以下是我曾經開發過的一些專案：</p>
+    <ul>
+      <li><strong>個人部落格系統：</strong> 使用 Node.js + MongoDB 製作。</li>
+      <li><strong>電商網站前端：</strong> 使用 React + Redux 實現購物流程。</li>
+      <li><strong>行動網頁設計：</strong> 使用 RWD 技術讓網站在手機上也能完美顯示。</li>
+    </ul>
+  </section>
+
+  <!-- 聯絡我 -->
+  <section id="contact">
+    <h2>聯絡我</h2>
+    <p>有任何合作機會或問題，歡迎與我聯繫！</p>
+    <a href="mailto:xiaoming@example.com">寄信給我</a>
+    <a href="https://github.com/xiaoming" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/xiaoming" target="_blank">LinkedIn</a>
+  </section>
+
+  <footer>
+    &copy; 2025 王小明 | 版權所有
+  </footer>
+
+</body>
+</html>
